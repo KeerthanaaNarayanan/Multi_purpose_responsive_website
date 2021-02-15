@@ -1,0 +1,93 @@
+/*
+
+PSD to HTML5 & CSS3
+===================
+
+Here are some of the CSS3 styles I use in this lecture, and throughout the course.
+
+I don't explain them in detail, and type them quite fast in the lectures.
+On the chance that you're afraid you'll mistype some of the CSS,
+I've provided them below so you can just copy and paste them right in your stylesheet!
+
+---
+
+Extra Resources:
+================
+
+CSS Box Shadow:		http://css-tricks.com/snippets/css/css-box-shadow/
+CSS Border Radius:	http://css-tricks.com/almanac/properties/b/border-radius/
+CSS Transition: 	http://css-tricks.com/almanac/properties/t/transition/
+
+---
+
+<!-- Happy Coding, mis amigos! -->
+<brad/>
+
+*/
+
+
+
+/*
+	Header CSS3
+*/
+
+header nav ul li a:active {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+	   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+	        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+}
+
+
+/*
+	Buttons CSS3
+*/
+
+.btn {
+	width: auto;
+	background: #0090bf;
+	border: 1px solid #1e728c;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	
+	/* IE7 inline-block fix */
+	zoom: 1;
+	*display: inline;
+	
+	margin: 0;
+	outline: none;
+	padding: 10px 20px 11px;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+	
+	/* Fancy box shadows */
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	   -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	
+	/* CSS3 transitions */
+	-webkit-transition: background-color 0.15s ease-in-out;
+	   -moz-transition: background-color 0.15s ease-in-out;
+	     -o-transition: background-color 0.15s ease-in-out;
+	        transition: background-color 0.15s ease-in-out; 
+}
+
+
+.btn:active {
+	-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+	   -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+	        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+	color: #fff;
+}
+
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active {
+	background: none;
+	border: none;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+}
+
+
